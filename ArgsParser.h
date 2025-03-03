@@ -25,7 +25,7 @@ public:
 		return m_args.front();
 	}
 
-	// Parse helpers return false on error.  Absence of the specified args is *not* an error.
+	// Parse helpers return false on absence of the specified args or on error.
 	bool ParseString(std::string& o_val, const std::list<std::string>& i_names, const std::list<std::string>& i_valid = {})
 	{
 		if (!Match(i_names))
